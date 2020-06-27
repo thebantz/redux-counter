@@ -1,0 +1,25 @@
+{
+  "name": "redux-counter",
+  "version": "1.0.0",
+  "description": "playground repo for redux-enabled React applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thebantz/redux-counter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thebantz/redux-counter/issues"
+  },
+  "homepage": "https://github.com/thebantz/redux-counter#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "redux": "^4.0.5"
+  }
+}
