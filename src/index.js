@@ -7,11 +7,17 @@ import { connect, Provider } from 'react-redux'
 
 const initialState = {
   count: 0
-}
+};
+
+const INCREMENT = 'INCREMENT';
+
+const incrementValue = () => ({
+  type: INCREMENT
+})
 
 
 const reducer = (state = initialState, action) => {
-  if (action.type === 'INCREMENT') {
+  if (action.type === INCREMENT) {
     return {
       count: state.count + 1
     }
@@ -19,6 +25,8 @@ const reducer = (state = initialState, action) => {
   return state;
 };
 import './styles.scss';
+
+const store = createStore(reducer);
 
 class Counter extends Component {
   render() {
