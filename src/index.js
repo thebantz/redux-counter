@@ -1,7 +1,19 @@
 
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import { createStore } from 'redux';
+import { connect, Provider } from 'react-redux'
 
+
+const initialState = {
+  count: 0
+}
+
+
+const reducer = (state = initialState, action) => {
+  
+  return state;
+};
 import './styles.scss';
 
 class Counter extends Component {
