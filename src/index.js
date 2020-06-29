@@ -43,4 +43,16 @@ class Counter extends Component {
   }
 }
 
+const mapStateToProps = state => {
+  return state;
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    increment() {
+      dispatch(incrementValue);
+    }
+  }
+}
+
 render(<Counter />, document.getElementById('root'));
